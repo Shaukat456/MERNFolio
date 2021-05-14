@@ -38,14 +38,18 @@ body{
     border: 2px solid black;
     border-radius: 5em;
     /* border-collapse: collapse; */
-    font-size: 1.1rem;
-
+        font-size: 1.1rem;
+    outline: none;
     /* overflow: hidden; */
 }
 .N button:hover{
     transform: scale(2.1);
     transition: all .2s ease;
     border:2px solid black;
+    box-shadow: 0px 0px 6px yellow; 
+    color: white;
+    background-color: black;
+    /* outline: 0px 0px 10px yellow ; */
     cursor: pointer;
     border-radius: 2%;
     font-family: monospace;
