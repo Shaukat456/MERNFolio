@@ -3,6 +3,7 @@ import "react-router-dom"
 import {Fade}  from  'react-reveal'
 import { NavLink, Switch,Route, useLocation } from 'react-router-dom'
 import Shaukat from './Shaukat'
+import Contact from './Contact'
 
 
 
@@ -13,15 +14,15 @@ const Navbar=()=>{
         <React.Fragment>
            
             <Switch>
-            <Route exact path='/' />
+            <Route exact path='/'  />
             <Route exact path='/Portfolio'  />
-            <Route exact path='/Contact'  />
+            <Route exact path='/Contact'   />
             </Switch>
 
 {/* WHAT REALLY RENDERS! */}
       <Fade top> 
         <div className='nav'> 
-            <NavLink  className='navL'  exact  to='/PortFolio' activeClassName="selected" > PORTFOLIO </NavLink>
+            <NavLink    className='navL'   exact  to='/PortFolio' activeClassName="selected" > PORTFOLIO </NavLink>
             <NavLink  className='navL'  exact  to='/Contact' activeClassName="selected" > Contact ME </NavLink>
             <NavLink   className='navL' exact  to='/' activeClassName="selected" > About  </NavLink>
             </div>

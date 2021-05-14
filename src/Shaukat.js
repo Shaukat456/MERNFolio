@@ -8,6 +8,8 @@ import './SHAUKAT.css';
 // import icon from './favicon.ico'
 // import icon from '../public/favicon.ico';
 import styled from 'styled-components'
+
+import Navbar from './Navbar'
 import 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import DisplayPicture from './pppp.png'
@@ -84,11 +86,8 @@ setResume(show) ? setButton('SHOW ') : setButton('Double tap to HIDE');
   </Bounce >       <h3> {resume} </h3> 
        </div>
 
-       <Portfolio>
-    <Sections> <Fade bottom right>PORTFOLIO </Fade> 
-     </Sections>                
-       
-            </Portfolio>    
+{/* <Navbar/> */}
+           
     
         </React.Fragment>
     )
