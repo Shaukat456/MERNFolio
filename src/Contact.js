@@ -3,18 +3,18 @@ import Shaukat from './Shaukat'
 import styled from "styled-components";
 
 import Navbar from './Navbar'
-import { set } from 'mongoose';
+// import { set } from 'mongoose';
 import { Fade, LightSpeed } from 'react-reveal';
 
 
 const Contact = () => {
 
-  //Styled Component
+  //Styled Components
 
   const ContactForm = styled.div `
   display:flex;
   flex-direction:column
-  // justify-content:center;
+  justify-content:center;
   transition:all .5s ease;
   padding:1.1em;
   flex-wrap:wrap
@@ -22,7 +22,7 @@ const Contact = () => {
   // align-items:center;
 
   & > h1{
-    // display:block;
+    display:flex;
   justify-content:center;
   flex-direction:column
   flex-wrap:wrap
@@ -65,7 +65,7 @@ display:flex;
     box-shadow: 0px 0px 10px yellow; 
   }
   `;
-<Navbar/>
+{/* <Navbar/> */}
   const [Button, setButton] = useState('HIRE ME ');
   const [Contact,setContact]=useState()
 const SeeContact=()=>{

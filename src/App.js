@@ -10,7 +10,7 @@ return(
     <>
 <Navbar/>
 <Shaukat/>
-<Contact/>
+{/* <Contact/> */}
     </>
 )
 }

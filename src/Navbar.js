@@ -15,17 +15,17 @@ const Navbar=()=>{
         <React.Fragment>
            
             <Switch>
-            <Route exact path='/'  />
+            <Route exact path='/' component={Shaukat}  />
             <Route exact path='/Portfolio'  />
-            <Route exact path='/Contact'   />
+            <Route exact path='/Contact' component={Contact}  />
             </Switch>
 
 {/* WHAT REALLY RENDERS! */}
       <Fade top> 
         <div className='nav'> 
-            <NavLink    className='navL'   exact  to='/PortFolio' activeClassName="selected" > PORTFOLIO </NavLink>
-            <NavLink  className='navL'  exact  to='/Contact' activeClassName="selected" > Contact ME </NavLink>
-            <NavLink   className='navL' exact  to='/' activeClassName="selected" > About  </NavLink>
+            <NavLink    className='navL'     to='/PortFolio' activeClassName="selected" > PORTFOLIO </NavLink>
+            <NavLink  className='navL'    to='/Contact' activeClassName="selected" > Contact ME </NavLink>
+            <NavLink   className='navL'   to='/' activeClassName="selected" > About  </NavLink>
             </div>
             </Fade>
         </React.Fragment>
