@@ -77,7 +77,9 @@ const SeeContact=()=>{
     <Cinput type='Name' autoFocus autoCapitalize placeholder=' NAME' />
         <Cinput type='email' placeholder='Email' />
         <Cinput type='text' placeholder='Hire me Or Lets Talk ' />
+    <button> SEND </button>
         </Fade >
+
         </ContactForm>
     </>
   )
