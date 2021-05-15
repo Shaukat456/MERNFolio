@@ -8,8 +8,9 @@ import Contact from './Contact'
 
 
 const Navbar=()=>{
-    const c=useLocation()
-    console.log(c)
+   const navs=useLocation();
+
+
     return (
         <React.Fragment>
            

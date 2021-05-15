@@ -3,26 +3,29 @@ import Shaukat from './Shaukat'
 import styled from "styled-components";
 
 import Navbar from './Navbar'
+import { set } from 'mongoose';
+import { Fade, LightSpeed } from 'react-reveal';
 
 
 const Contact = () => {
 
   //Styled Component
 
-  const ContactForm = styled.div
-
-    `
+  const ContactForm = styled.div `
   display:flex;
   flex-direction:column
-  justify-content:center;
+  // justify-content:center;
   transition:all .5s ease;
   padding:1.1em;
+  flex-wrap:wrap
+
   // align-items:center;
 
   & > h1{
-    display:block;
+    // display:block;
   justify-content:center;
   flex-direction:column
+  flex-wrap:wrap
   transition:all .5s ease;
 }
   `;
@@ -32,8 +35,10 @@ const Contact = () => {
   const Cinput = styled.input`
 display:flex;
   justify-content:center;
+  flex-direction:column;
   transition:all .5s ease;
   font-size:2rem;
+  flex-wrap:wrap;
   text-transform:capitalize;
   font-family:monospace;
   border-radius:20px ;
@@ -51,17 +56,40 @@ display:flex;
 
 } 
   &:last-child:focus {
+  
+
     transtion:all .5s ease;
     color:orange;
-    // width:61em;
+    
+   
     box-shadow: 0px 0px 10px yellow; 
   }
- 
- 
-
   `;
+<Navbar/>
+  const [Button, setButton] = useState('HIRE ME ');
+  const [Contact,setContact]=useState()
+const SeeContact=()=>{
+  var Clicked=()=>{
+  return (
+    <>
+      <ContactForm>
+    <Fade  bottom>
+    <Cinput type='Name' autoFocus autoCapitalize placeholder=' NAME' />
+        <Cinput type='email' placeholder='Email' />
+        <Cinput type='text' placeholder='Hire me Or Lets Talk ' />
+        </Fade >
+        </ContactForm>
+    </>
+  )
+  
+}
 
-  const [Button, setButton] = useState(false);
+
+setContact(Clicked) ?  console.log('') : setButton('DOUBLE CLICK TO HIDE')
+  // setButton(Clicked)  
+
+}
+
 
   const input = useRef('')
   // useEffect(()=>{
@@ -79,15 +107,13 @@ display:flex;
 <button  >  {Button} </button>
 </div> */}
 
-      <ContactForm>
+      <div className='N'>
+  <button   onClick={SeeContact} onDoubleClick={()=>[setButton('show'), <> <Fade left duration={1000} >  { setContact('')} </Fade> </>   ]} >{Button}</button>
         <h1 >CONTACT</h1>
-        <Cinput type='Name' autoFocus autoCapitalize placeholder=' NAME' />
-        <Cinput type='email' placeholder='Email' />
-        <Cinput type='text' placeholder='Hire me Or Lets Talk ' />
+  </div>
+      <ContactForm>
+        { Contact}
       </ContactForm>
-
-
-
 
     </>
   )
