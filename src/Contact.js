@@ -73,15 +73,16 @@ const SocialMedia=[
   {
     Name:'LinkedIN',
     Site:'https://www.linkedin.com/in/shaukat-sohail-012aaa167/',
-    icons:`${<LinkedInIcon> asd</LinkedInIcon> }`
+    // icons:`<LinkedInIcon>  </LinkedInIcon>`
+    icons:<LinkedInIcon></LinkedInIcon>
   },
  { Name:'Github',
   Site:'https://github.com/Shaukat456',
-  icons:`${<GitHubIcon></GitHubIcon> }`
+  icons:<GitHubIcon></GitHubIcon> 
 } ,
 {Name:'Facebook',
 Site:'https://www.facebook.com/shoukat.sohail.58/',
-icons:`${<FacebookIcon></FacebookIcon> }`
+icons:<FacebookIcon></FacebookIcon>
 
 }
 ]
@@ -139,10 +140,10 @@ setContact(Clicked) ?  console.log('') : setButton('DOUBLE CLICK TO HIDE')
 
 {SocialMedia.map((links , ke)=>{
   return <>
-  <div className='N' key={ke} >
+  <div className='l' key={ke} >
     <h1 >{links.Name}</h1>
    <a  href={links.Site} >  
-  <img src={links.icons} alt='sa' />
+  <i> {links.icons} </i>
      </a>
   
 
