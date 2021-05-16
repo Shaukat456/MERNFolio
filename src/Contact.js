@@ -94,11 +94,7 @@ setContact(Clicked) ?  console.log('') : setButton('DOUBLE CLICK TO HIDE')
 
 
   const input = useRef('')
-  // useEffect(()=>{
-  // setButton(true)
-  //   // input.current.value < 5 ? setButton('Send Now') : setButton('Share Response')
-
-  // },[Button])
+  
   return (
 
     <>
@@ -110,8 +106,8 @@ setContact(Clicked) ?  console.log('') : setButton('DOUBLE CLICK TO HIDE')
 </div> */}
 
       <div className='N'>
-  <button   onClick={SeeContact} onDoubleClick={()=>[setButton('show'), <> <Fade left duration={1000} >  { setContact('')} </Fade> </>   ]} >{Button}</button>
-        <h1 >CONTACT</h1>
+        <h1 >LET GET IN TOUCH</h1>
+  <button   onClick={SeeContact} onDoubleClick={()=>[setButton('HIRE'), <> <Fade left duration={1000} >  { setContact('')} </Fade> </>   ]} >{Button}</button>
   </div>
       <ContactForm>
         { Contact}

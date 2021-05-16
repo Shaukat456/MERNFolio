@@ -31,7 +31,7 @@ body{
 .N button{
     align-items: center;
     justify-content: center;
-    width: 14rem;
+    width: 16rem;
     flex-wrap: wrap;
     /* border-style: ridge; */
     transition: all .5s ease;
