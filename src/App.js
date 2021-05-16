@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Navbar from './Navbar'
 import Contact from './Contact'
 import {Route , Switch} from 'react-router-dom'
-
+import './index.css'
 const App= ()=>{
 
 return(

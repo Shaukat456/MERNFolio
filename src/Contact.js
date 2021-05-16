@@ -74,15 +74,15 @@ const SocialMedia=[
     Name:'LinkedIN',
     Site:'https://www.linkedin.com/in/shaukat-sohail-012aaa167/',
     // icons:`<LinkedInIcon>  </LinkedInIcon>`
-    icons:<LinkedInIcon></LinkedInIcon>
+    icons:<LinkedInIcon style={{ color:'white' }}  ></LinkedInIcon>
   },
  { Name:'Github',
   Site:'https://github.com/Shaukat456',
-  icons:<GitHubIcon></GitHubIcon> 
+  icons:<GitHubIcon style={{ color: 'white' }}  ></GitHubIcon> 
 } ,
 {Name:'Facebook',
 Site:'https://www.facebook.com/shoukat.sohail.58/',
-icons:<FacebookIcon></FacebookIcon>
+icons:<FacebookIcon  style={{ color: 'blue'  }} ></FacebookIcon>
 
 }
 ]
@@ -94,17 +94,18 @@ const SeeContact=()=>{
   var Clicked=()=>{
   return (
     <>
-      <ContactForm>
+    <Fade>  <ContactForm>
     <Fade  bottom>
     <Cinput type='Name' autoFocus autoCapitalize placeholder=' NAME' />
         <Cinput type='email' placeholder='Email' />
         <Cinput type='text' placeholder='Hire me Or Lets Talk ' />
  <div className='N' >
-    <button> SEND </button>
+    <button > SEND </button>
     </div>
         </Fade >
 
         </ContactForm>
+        </Fade>
     </>
   )
   
@@ -140,7 +141,7 @@ setContact(Clicked) ?  console.log('') : setButton('DOUBLE CLICK TO HIDE')
 
 {SocialMedia.map((links , ke)=>{
   return <>
-  <div className='l' key={ke} >
+  <div className='Socials' key={ke} >
     <h1 >{links.Name}</h1>
    <a  href={links.Site} >  
   <i> {links.icons} </i>

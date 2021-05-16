@@ -7,14 +7,27 @@ body{
     color: white;
     font-family: 'Roboto', sans-serif;
 }
-.N{
+
+.N{ 
+    background-color: black;
+    /* background: url('./BG/default.png') no-repeat center center #786965 ; */
+    /* height: 100vh; */
+    /* background-color: black; */
+    /* color: white; */
     display: flex;
+    /* position: relative; */
+    /* top: 4em; */
+    /* height: 100vh; */
+    /* z-index: -1; */
+    /* margin-top: 20%; */
     flex-wrap: wrap;
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
     text-align: center;
     align-items: center;
+    /* margin-top: ; */
+    /* visibility: hidden; */
 }
 .N h1{
     display: flex;
@@ -23,10 +36,12 @@ body{
     font-family: monospace  ;
     font-size: 5rem;
     flex-wrap: wrap;
+    /* visibility: hidden; */
 }
 .N h2{
     flex-wrap: wrap;
     font-size: 2rem;
+    /* visibility: hidden; */
 }
 .N button{
     align-items: center;
@@ -174,3 +189,23 @@ flex-direction: column;
     width: 7em;
 }
 
+.Socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    /* flex-wrap: wrap; */
+}
+.Socials h1{
+font-size: 2rem;
+flex-wrap: wrap;
+visibility: hidden;
+}
+.Socials  i{
+    outline: none;
+    justify-content: center;
+    height:400px ;
+    width: 4rem;
+    color: yellow;
+    outline: none;
+}
