@@ -5,7 +5,10 @@ import styled from "styled-components";
 import Navbar from './Navbar'
 // import { set } from 'mongoose';
 import { Fade, LightSpeed } from 'react-reveal';
-
+import { Link } from 'react-router-dom';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const Contact = () => {
 
@@ -65,7 +68,25 @@ display:flex;
     box-shadow: 0px 0px 10px yellow; 
   }
   `;
-{/* <Navbar/> */}
+
+const SocialMedia=[
+  {
+    Name:'LinkedIN',
+    Site:'https://www.linkedin.com/in/shaukat-sohail-012aaa167/',
+    icons:`${<LinkedInIcon> asd</LinkedInIcon> }`
+  },
+ { Name:'Github',
+  Site:'https://github.com/Shaukat456',
+  icons:`${<GitHubIcon></GitHubIcon> }`
+} ,
+{Name:'Facebook',
+Site:'https://www.facebook.com/shoukat.sohail.58/',
+icons:`${<FacebookIcon></FacebookIcon> }`
+
+}
+]
+
+
   const [Button, setButton] = useState('HIRE ME ');
   const [Contact,setContact]=useState()
 const SeeContact=()=>{
@@ -77,7 +98,9 @@ const SeeContact=()=>{
     <Cinput type='Name' autoFocus autoCapitalize placeholder=' NAME' />
         <Cinput type='email' placeholder='Email' />
         <Cinput type='text' placeholder='Hire me Or Lets Talk ' />
+ <div className='N' >
     <button> SEND </button>
+    </div>
         </Fade >
 
         </ContactForm>
@@ -112,6 +135,20 @@ setContact(Clicked) ?  console.log('') : setButton('DOUBLE CLICK TO HIDE')
       <ContactForm>
         { Contact}
       </ContactForm>
+
+
+{SocialMedia.map((links , ke)=>{
+  return <>
+  <div className='N' key={ke} >
+    <h1 >{links.Name}</h1>
+   <a  href={links.Site} >  
+  <img src={links.icons} alt='sa' />
+     </a>
+  
+
+  </div>
+  </>
+})}
 
     </>
   )
