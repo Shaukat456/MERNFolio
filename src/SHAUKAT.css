@@ -196,6 +196,7 @@ visibility: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* transform: skewX(10deg) e; */
     /* background-color: rgb(29, 65, 65); */
     flex-wrap: wrap;
     /* width: 50vw; */
@@ -207,23 +208,53 @@ visibility: hidden;
     height: 25em;
     min-height: 12em;
     /* max-height: 15em; */
-} ul {
+} 
+.introduction ul {
+     /* transform: rotateX(40deg); */
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /* align-items:center ; */
-
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items:flex-start ;
+    flex-wrap: wrap ;
     /* position: relative; */
     /* flex-direction: column; */
 }
-.introduction p{
- text-align: center;
+.introduction  p{
+    /* flex-direction: column; */
+ text-align: center; 
     flex-wrap: wrap;
-    padding: 5%;
+    padding: 1%;
     align-items: center;
+    background-color:white;
+    color: black;
+    border: 1px solid green;
+    /* transform: skew(2deg); */
     /* margin: 2em; */
     /* display: block; */
 }
-.introduction li{
-    list-style: none;
+
+
+.introduction h1{
+    color: yellow;
+    border-bottom: 2px solid white;
 }
+ .cover {
+     background: url('./BG/cover.png') no-repeat center;
+     height: 90vh;
+     width: 80vw;
+
+ }
+
+
+.L  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.2em;
+    list-style: none;
+    flex-wrap: wrap;
+}
+    .L li{
+        flex-wrap: wrap;
+        margin:2em ;
+    }

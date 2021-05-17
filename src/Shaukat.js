@@ -34,7 +34,7 @@ const Sections=styled.h2`
 const frontend=['HTML','CSS','Javascript','React']
 const backend=['Nodejs ', 'Express' ]
 const db=['MongoDB','MY SQL','POSTGRE SQL'  ]
-
+const Skills=['Adobe Photoshop ', 'Web Desiging ', 'UX/UI']
 const Shaukat=()=>{
   const [resume, setResume]=useState( )
   const [button ,setButton]=useState('See resume')
@@ -61,36 +61,47 @@ const Shaukat=()=>{
     having deep interest in programming and development of various software operations I managed to become a web developer .  
     
     having deep interest in programming and development of various software operations I managed to become a web developer .  
+    having deep interest in programming and development of various software operations I managed to become a web developer .  
+    having deep interest in programming and development of various software operations I managed to become a web developer .  
+    having deep interest in programming and development of various software operations I managed to become a web developer .  
+    having deep interest in programming and development of various software operations I managed to become a web developer .  
+    having deep interest in programming and development of various software operations I managed to become a web developer .  
+    having deep interest in programming and development of various software operations I managed to become a web developer .  
         
       </p></Fade>
 <ul >
+<div className='L'>
 <h1>FRONTEND</h1>
 
     {
         frontend.map((frames,index)=>{
             return (
                 <>
-                
-                <h2 key={index}>{frames.stack }</h2>     
+                {/* <h2 key={index}>{frames.stack }</h2>      */}
           <Fade top>  <li>   { frames} </li></Fade>
                 </>
             )
         })
     }        
+    </div> 
 
+<div className='L'>
 <h1>BACKEND</h1>
     {
         backend.map((fram,inde)=>{
             return(
                 <>
+
              <Fade top>  <li>{fram} </li></Fade> 
                 </>
             )
         })
     }
+    </div>
+<div className='L'>
 <h1>DATABASES</h1>
     {
-       db.map((fram,inde)=>{
+        db.map((fram,inde)=>{
             return(
                 <>
                <Fade bottom ><li>{fram} </li> </Fade>
@@ -99,8 +110,26 @@ const Shaukat=()=>{
         })
     }
     
+    </div>
+<div className='L'>
+<h1>Other Skills</h1>
+    {
+        Skills.map((fram,inde)=>{
+            return(
+                <>
+               <Fade bottom ><li>{fram} </li> </Fade>
+                </>
+            )
+        })
+    }
+    
+    </div>
 
 </ul>
+</div>
+
+<div className='cover'>
+    
 </div>
            </>
        )
