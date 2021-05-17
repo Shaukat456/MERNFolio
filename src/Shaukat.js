@@ -13,6 +13,7 @@ import Navbar from './Navbar'
 import 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import DisplayPicture from './pppp.png'
+import { SubdirectoryArrowLeftRounded } from '@material-ui/icons';
 
 
 
@@ -45,23 +46,36 @@ const Shaukat=()=>{
            <>
            <div className='intro'> 
     <Fade bottom >             <img    src={DisplayPicture}/>
-           <h1> <strong>HEY, SHAUKAT HERE</strong> </h1>
+           
+         </Fade>
+        <Fade left>
     <p>  
-        'I am 19 and a Mern Stack Developer who develops websites for various platforms, and being a Web app developer I am familar with
-• JAVASCRIPT (ES5/6) 
-• CSS3 • HTML5 • EXPRESS.js. • NODE.js   • REACT.js  • MATERIAL UI • JWT . • GITHUB
+    I am <strong> Shaukat Sohail</strong> , A <strong>FULL STACK WEB DEVELOPER</strong> , i am currently in intermediate (Science) but
+    having deep interest in programming & development of various software operations I managed to become a web developer .   
+         </p>
+        </Fade>
+         
+</div>
+        <div className='techs' > 
+        <h3> TECHNOLOGIES I'VE WORKED WITH</h3>
+        <ul>
 
-•  ABLE TO BUILD RESTful-APIs with Node/Express and MongoDB.
-•  Can Make Responsive Web sites for cross platforms.
-•  Can maintain both frontend and backend of web application.
+     {/* • MATERIAL UI • JWT .  */}
 
-My stack completes the full cycle of web development hence I am a Full Stack Web Developer.
+         <li>  HTML5 </li>
+         <li>          CSS3 </li>
+         <li> JAVASCRIPT (ES5/6)</li>
+         <li> REACT.js</li>
+         <li>  NODE.js</li>
+         <li> EXPRESS.js</li>
+         <li> GIT / GITHUB </li>
+        </ul>
+        </div>
 
-Trying to manage programming along with my studies , I am always looking forward to learn something new and utilize my time in productive activities.
 
-'   </p>
-            </Fade>
-            </div>
+
+            {/* </Fade>
+            </div> */}
 
            </>
        )
