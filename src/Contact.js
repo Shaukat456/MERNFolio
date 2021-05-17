@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Shaukat from './Shaukat'
 import styled from "styled-components";
-
+import ContactF from './ContactF';
 import Navbar from './Navbar'
 // import { set } from 'mongoose';
 import { Fade, LightSpeed } from 'react-reveal';
@@ -9,6 +9,9 @@ import { Link } from 'react-router-dom';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+
+
+
 
 const Contact = () => {
 
@@ -94,7 +97,9 @@ const SeeContact=()=>{
   var Clicked=()=>{
   return (
     <>
-    <Fade>  <ContactForm>
+    <Fade>
+      <ContactF/>
+        {/* <ContactForm>
     <Fade  bottom>
     <Cinput type='Name' autoFocus autoCapitalize placeholder=' NAME' />
         <Cinput type='email' placeholder='Email' />
@@ -104,7 +109,7 @@ const SeeContact=()=>{
     </div>
         </Fade >
 
-        </ContactForm>
+        </ContactForm> */}
         </Fade>
     </>
   )
@@ -134,10 +139,11 @@ setContact(Clicked) ?  console.log('') : setButton('DOUBLE CLICK TO HIDE')
         <h1 >LET GET IN TOUCH</h1>
   <button   onClick={SeeContact} onDoubleClick={()=>[setButton('HIRE'), <> <Fade left duration={1000} >  { setContact('')} </Fade> </>   ]} >{Button}</button>
   </div>
-      <ContactForm>
+  
+  {/* <ContactF/> */}
+      {/* <ContactForm>
         { Contact}
-      </ContactForm>
-
+      </ContactForm> */}
 
 {SocialMedia.map((links , ke)=>{
   return <>

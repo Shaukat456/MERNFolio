@@ -1,4 +1,5 @@
 body{
+    scroll-behavior: smooth;
     background: url('./BG/vector/isolated-layout.svg')  center cover 100% ;
 }
 footer{
