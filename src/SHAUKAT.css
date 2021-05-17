@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
+    transition: all .5s ease    ;
     box-sizing: border-box;
 }
 body{
@@ -265,4 +266,32 @@ visibility: hidden;
     .L li{
         flex-wrap: wrap;
         margin:2em ;
+    }
+
+    /* Responsive */
+
+    @media (max-width:320px) {
+        .N{
+            position: relative;
+            top: 2em;
+        }
+        .N h1{
+            font-size: 3rem;
+            /* flex-wrap: wrap; */
+        }
+        .N h2{
+            font-size: 1.4rem;
+        }
+        .N p{   
+        }
+
+        .cover{
+            height: 57vh;
+            width: 100vw
+        }
+         .N button{
+            font-family: cursive;
+            width: 12rem;
+        font-size: 1rem;        
+        }
     }
