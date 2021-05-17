@@ -30,11 +30,14 @@ const Sections=styled.h2`
     // border-top:1px dotted white;
 `;
 
-
+//TECH ARRAYS
 const frontend=['HTML','CSS','Javascript','React']
 const backend=['Nodejs ', 'Express' ,'Restful-Apis' ]
 const db=['MongoDB','MY SQL','POSTGRE SQL'  ]
 const Skills=['Git', 'Web Desiging ', 'UX/UI','Postman']
+
+
+
 const Shaukat=()=>{
   const [resume, setResume]=useState( )
   const [button ,setButton]=useState('See resume')
@@ -53,7 +56,7 @@ const Shaukat=()=>{
         <figure> <img src={DisplayPicture}/> </figure>
         </Fade>    
         {/* <h1>HEY</h1> */}
- <Fade top right>  <p> I am <strong> Shaukat Sohail</strong> , A <strong>FULL STACK WEB DEVELOPER</strong> , i am currently in intermediate (Science) but
+ <Fade bottom duration={2000}>  <p> I am <strong> Shaukat Sohail</strong> , A <strong>FULL STACK WEB DEVELOPER</strong> , i am currently in intermediate (Science) but
     having deep interest in programming and development of various software operations I managed to become a web developer .  
     
     having deep interest in programming and development of various software operations I managed to become a web developer .  

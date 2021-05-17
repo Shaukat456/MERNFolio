@@ -12,7 +12,7 @@ return(
  <React.Fragment>
            
            <Switch>
-           <Route exact path='/About'component={Shaukat}  />
+           {/* <Route exact path='/'component={Shaukat}  /> */}
            <Route exact path='/Portfolio'  />
            <Route exact path='/Contact' component={Contact}  />
            </Switch>
@@ -22,8 +22,15 @@ return(
 
 
 <Navbar/>
-{/* <Shaukat/> */}
-{/* <Contact/> */}
+<Shaukat/>
+<Contact/>
+
+
+<footer>
+    Shaukat Sohail &copy; 
+
+
+</footer>
     </>
 )
 }

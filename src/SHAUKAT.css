@@ -192,7 +192,7 @@ visibility: hidden;
     outline: none;
 }
 .introduction{
-    border-top: 2px solid white;
+    border-top: 10px solid yellowgreen;
     position: relative;
     top: 2em;
     display: flex;
@@ -201,6 +201,9 @@ visibility: hidden;
     /* transform: skewX(10deg) e; */
     /* background-color: rgb(29, 65, 65); */
     flex-wrap: wrap;
+    /* border-end-end-radius: 200px; */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 30%;
     /* width: 50vw; */
     /* flex-direction: column; */
 }
