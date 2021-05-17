@@ -131,9 +131,9 @@ const Shaukat=()=>{
 </ul>
 </div>
 
-<div className='cover'>
-    
+<Fade bottom> <div className='cover'>
 </div>
+</Fade>
            </>
        )
     }

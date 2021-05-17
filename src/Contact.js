@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Shaukat from './Shaukat'
 import styled from "styled-components";
-import ContactF from './ContactF';
+// import ContactF from './ContactF';
 import Navbar from './Navbar'
 // import { set } from 'mongoose';
 import { Fade, LightSpeed } from 'react-reveal';
@@ -98,18 +98,7 @@ const SeeContact=()=>{
   return (
     <>
     <Fade>
-      <ContactF/>
-        {/* <ContactForm>
-    <Fade  bottom>
-    <Cinput type='Name' autoFocus autoCapitalize placeholder=' NAME' />
-        <Cinput type='email' placeholder='Email' />
-        <Cinput type='text' placeholder='Hire me Or Lets Talk ' />
- <div className='N' >
-    <button > SEND </button>
-    </div>
-        </Fade >
-
-        </ContactForm> */}
+     <input type='text'  />
         </Fade>
     </>
   )
@@ -140,10 +129,7 @@ setContact(Clicked) ?  console.log('') : setButton('DOUBLE CLICK TO HIDE')
   <button   onClick={SeeContact} onDoubleClick={()=>[setButton('HIRE'), <> <Fade left duration={1000} >  { setContact('')} </Fade> </>   ]} >{Button}</button>
   </div>
   
-  {/* <ContactF/> */}
-      {/* <ContactForm>
-        { Contact}
-      </ContactForm> */}
+  
 
 {SocialMedia.map((links , ke)=>{
   return <>
