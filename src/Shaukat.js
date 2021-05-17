@@ -31,8 +31,9 @@ const Sections=styled.h2`
 `;
 
 
-const techs=[ 'HTML','CSS','Javascript','React','Nodejs','Express','MongoDB' ]
-
+const frontend=['HTML','CSS','Javascript','React']
+const backend=['Nodejs ', 'Express' ]
+const db=['MongoDB','MY SQL','POSTGRE SQL'  ]
 
 const Shaukat=()=>{
   const [resume, setResume]=useState( )
@@ -47,22 +48,58 @@ const Shaukat=()=>{
        return (
 
            <>
-<div className='intro'>
+<div className='introduction'>
     <Fade bottom>
         <figure> <img src={DisplayPicture}/> </figure>
         </Fade>    
-   <p> I am <strong> Shaukat Sohail</strong> , A <strong>FULL STACK WEB DEVELOPER</strong> , i am currently in intermediate (Science) but
-    having deep interest in programming and development of various software operations I managed to become a web developer .    </p>     
-<ul>
+        {/* <h1>HEY</h1> */}
+ <Fade top right>  <p> I am <strong> Shaukat Sohail</strong> , A <strong>FULL STACK WEB DEVELOPER</strong> , i am currently in intermediate (Science) but
+    having deep interest in programming and development of various software operations I managed to become a web developer .  
+    
+    having deep interest in programming and development of various software operations I managed to become a web developer .  
+    
+    having deep interest in programming and development of various software operations I managed to become a web developer .  
+    
+    having deep interest in programming and development of various software operations I managed to become a web developer .  
+        
+      </p></Fade>
+<ul >
+<h1>FRONTEND</h1>
+
     {
-        techs.map((frames)=>{
+        frontend.map((frames,index)=>{
             return (
                 <>
-            <li> {frames} </li>
+                
+                <h2 key={index}>{frames.stack }</h2>     
+          <Fade top>  <li>   { frames} </li></Fade>
                 </>
             )
         })
     }        
+
+<h1>BACKEND</h1>
+    {
+        backend.map((fram,inde)=>{
+            return(
+                <>
+             <Fade top>  <li>{fram} </li></Fade> 
+                </>
+            )
+        })
+    }
+<h1>DATABASES</h1>
+    {
+       db.map((fram,inde)=>{
+            return(
+                <>
+               <Fade bottom ><li>{fram} </li> </Fade>
+                </>
+            )
+        })
+    }
+    
+
 </ul>
 </div>
            </>
@@ -85,8 +122,9 @@ setResume(show) ? setButton('SHOW ') : setButton('Double tap to HIDE');
     
     {/* Dynamic button hide/show */}
   <Bounce top right>  <button onDoubleClick={()=>[setResume('') ,setButton('SHOW')]}  onClick={ seeResume} className='intro' > { button} </button> 
-  </Bounce >       <h3> {resume} </h3> 
+  </Bounce >        
        </div>
+       <h3> {resume} </h3>
 
 {/* <Navbar/> */}
            
