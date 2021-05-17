@@ -137,27 +137,7 @@ body{
 }
 
 
-.intro{ 
- display: flex;
- justify-content: center;
- align-items: center;
- /* margin: 2em; */
- flex-wrap: wrap;
-/* overflow: hidden; */
 
-}
-.intro img{ 
-    /* flex-wrap: wrap; */
-    height: 40rem;
-    flex-wrap: wrap;
-}
-.intro p{
-    text-shadow: 20% pink;
-    /* padding: 2rem; */
-    text-align: cente;
-    flex-wrap: wrap;
-    font-size: 1.4rem;
-}
 
 
 

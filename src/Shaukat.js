@@ -31,6 +31,8 @@ const Sections=styled.h2`
 `;
 
 
+const techs=[ 'HTML','CSS','Javascript','React','Nodejs','Express','MongoDB' ]
+
 
 const Shaukat=()=>{
   const [resume, setResume]=useState( )
@@ -43,40 +45,26 @@ const Shaukat=()=>{
    var show=()=>{
 
        return (
+
            <>
-           <div className='intro'> 
-    <Fade bottom >             <img    src={DisplayPicture}/>
-           
-         </Fade>
-        <Fade left>
-    <p>  
-    I am <strong> Shaukat Sohail</strong> , A <strong>FULL STACK WEB DEVELOPER</strong> , i am currently in intermediate (Science) but
-    having deep interest in programming & development of various software operations I managed to become a web developer .   
-         </p>
-        </Fade>
-         
+<div className='intro'>
+    <Fade bottom>
+        <figure> <img src={DisplayPicture}/> </figure>
+        </Fade>    
+   <p> I am <strong> Shaukat Sohail</strong> , A <strong>FULL STACK WEB DEVELOPER</strong> , i am currently in intermediate (Science) but
+    having deep interest in programming and development of various software operations I managed to become a web developer .    </p>     
+<ul>
+    {
+        techs.map((frames)=>{
+            return (
+                <>
+            <li> {frames} </li>
+                </>
+            )
+        })
+    }        
+</ul>
 </div>
-        <div className='techs' > 
-        <h3> TECHNOLOGIES I'VE WORKED WITH</h3>
-        <ul>
-
-     {/* • MATERIAL UI • JWT .  */}
-
-         <li>  HTML5 </li>
-         <li>          CSS3 </li>
-         <li> JAVASCRIPT (ES5/6)</li>
-         <li> REACT.js</li>
-         <li>  NODE.js</li>
-         <li> EXPRESS.js</li>
-         <li> GIT / GITHUB </li>
-        </ul>
-        </div>
-
-
-
-            {/* </Fade>
-            </div> */}
-
            </>
        )
     }
