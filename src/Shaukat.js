@@ -32,9 +32,9 @@ const Sections=styled.h2`
 
 
 const frontend=['HTML','CSS','Javascript','React']
-const backend=['Nodejs ', 'Express' ]
+const backend=['Nodejs ', 'Express' ,'Restful-Apis' ]
 const db=['MongoDB','MY SQL','POSTGRE SQL'  ]
-const Skills=['Adobe Photoshop ', 'Web Desiging ', 'UX/UI']
+const Skills=['Git', 'Web Desiging ', 'UX/UI','Postman']
 const Shaukat=()=>{
   const [resume, setResume]=useState( )
   const [button ,setButton]=useState('See resume')
@@ -112,7 +112,7 @@ const Shaukat=()=>{
     
     </div>
 <div className='L'>
-<h1>Other Skills</h1>
+<h1>Other Tools/Skills</h1>
     {
         Skills.map((fram,inde)=>{
             return(

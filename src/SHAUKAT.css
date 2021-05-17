@@ -4,6 +4,8 @@
 }
 body{
     background-color: black;
+    margin: 0;
+    padding: 0;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
@@ -239,10 +241,12 @@ visibility: hidden;
     border-bottom: 2px solid white;
 }
  .cover {
-     background: url('./BG/cover.png') no-repeat center;
-     height: 90vh;
-     width: 80vw;
 
+     background: url('./BG/cover.png') no-repeat center/cover;
+     height: 100vh;
+     width: 100vw;
+    /* min-height: 400px; */
+    /* min-width: 300px; */
  }
 
 
