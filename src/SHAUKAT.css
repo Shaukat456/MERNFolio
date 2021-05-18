@@ -3,6 +3,10 @@
     transition: all .5s ease    ;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: black;
     margin: 0px;
