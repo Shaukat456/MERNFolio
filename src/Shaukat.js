@@ -8,7 +8,7 @@ import './SHAUKAT.css';
 // import icon from './favicon.ico'
 // import icon from '../public/favicon.ico';
 import styled from 'styled-components'
-
+import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle';
 import Navbar from './Navbar'
 import 'react-router-dom';
 import { useLocation } from 'react-router-dom';
@@ -52,8 +52,13 @@ const Shaukat=()=>{
 
            <>
 <div className='introduction'>
-    <Fade bottom>
-        <figure> <img src={DisplayPicture}/> </figure>
+    <Fade bottom> 
+    <figure> 
+         <img src={DisplayPicture}/> 
+        <ArrowDropDownCircleIcon></ArrowDropDownCircleIcon>
+         
+         </figure>
+    <h2> <strong> Hey xD</strong> </h2>
         </Fade>    
         {/* <h1>HEY</h1> */}
  <Fade bottom duration={2000}>  <p> I am <strong> Shaukat Sohail</strong> , A <strong>FULL STACK WEB DEVELOPER</strong> , i am currently in intermediate (Science) but

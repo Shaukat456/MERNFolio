@@ -124,10 +124,10 @@ body{
     text-decoration: white;
     flex-wrap: wrap;
     color: white;
-    align-items: center;
+    align-items: flex-start;
     /* width:30em; */
     background-color:black;
-    justify-content: center;
+    /* justify-content: center; */
     z-index: 6;
     top: 0;
     width: 100%;
@@ -238,8 +238,12 @@ visibility: hidden;
     /* width: 50vw; */
     /* flex-direction: column; */
 }
+.introduction h2{
+    font-size: 4rem;
+}
 
 .introduction  img{
+    width: auto;
     flex-wrap: wrap;
     height: 25em;
     min-height: 12em;

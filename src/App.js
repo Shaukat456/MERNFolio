@@ -15,8 +15,8 @@ return(
            <Switch>
 
         
-           <Route exact path='/' />
-           <Route exact path='/Portfolio'  />
+           {/* <Route exact path='/'  /> */}
+           <Route exact path='/Portfolio'   />
            <Route exact  path='/Contact' component={Contact}  />
            </Switch>
            </React.Fragment>
