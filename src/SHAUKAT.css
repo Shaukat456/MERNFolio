@@ -239,8 +239,61 @@ visibility: hidden;
     /* flex-direction: column; */
 }
 .introduction h2{
+    flex-wrap: wrap-reverse;
+    width: 30vw
+    ;
+    /* display: block; */
+    color: rgb(123, 190, 14);
     font-size: 4rem;
+/* 
+animation-name: hs;
+animation-timing-function: ease;
+animation-iteration-count: infinite;
+animation-duration: 1s; */
+/* animation-fill-mode: ;/ */
+
+
 }
+
+/* @keyframes hs {
+    20%{
+        transform: translateY(5%);
+    }
+    90%{
+        transform: translateY(-4%);
+    }
+    100%{
+        transform: translateY(-5%);
+    }
+} */
+ .icon{
+    display: block;
+    width:auto;
+    color: yellow;
+    background-color: black;
+    height: 20em;
+    animation-name: hs2;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    /* animation-fill-mode: ;/ */
+    
+    
+    }
+    
+    @keyframes hs2 {
+        20%{
+            transform: translateY(5%);
+        }
+        90%{
+            transform: translateY(-4%);
+        }
+        100%{
+            transform: translateY(-5%);
+        }
+    }
+
+
 
 .introduction  img{
     width: auto;

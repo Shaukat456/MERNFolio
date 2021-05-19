@@ -55,11 +55,15 @@ const Shaukat=()=>{
     <Fade bottom> 
     <figure> 
          <img src={DisplayPicture}/> 
-        <ArrowDropDownCircleIcon></ArrowDropDownCircleIcon>
-         
          </figure>
-    <h2> <strong> Hey xD</strong> </h2>
         </Fade>    
+         
+    {/* <h2> HEY <strong>  
+       Its Shaukat </strong>           */}
+        <ArrowDropDownCircleIcon  className='icon'>
+
+     {/* </h2> */}
+        </ArrowDropDownCircleIcon>
         {/* <h1>HEY</h1> */}
  <Fade bottom duration={2000}>  <p> I am <strong> Shaukat Sohail</strong> , A <strong>FULL STACK WEB DEVELOPER</strong> , i am currently in intermediate (Science) but
     having deep interest in programming and development of various software operations I managed to become a web developer .  
