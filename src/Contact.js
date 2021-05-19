@@ -90,7 +90,7 @@ icons:<FacebookIcon  style={{ color: 'blue'  }} ></FacebookIcon>
 }
 ]
 
-
+  const [ click, afterclick]=useState('SEND')
   const [Button, setButton] = useState('HIRE ME ');
   const [Contact,setContact]=useState()
 const SeeContact=()=>{
@@ -98,7 +98,13 @@ const SeeContact=()=>{
   return (
     <>
     <Fade>
-     <input type='text'  />
+      <div className='Contact'>
+             <input type='text' placeholder='Name'  />
+             <input type='text'  placeholder='Email' />
+             <input type='text'  placeholder='Hire me / Lets talk' />
+             <button> {click} </button>
+             </div>
+
         </Fade>
     </>
   )
@@ -123,7 +129,7 @@ setContact(Clicked) ?  console.log('') : setButton('DOUBLE CLICK TO HIDE')
   <button   onClick={SeeContact} onDoubleClick={()=>[setButton('HIRE'), <> <Fade left duration={1000} >  { setContact('')} </Fade> </>   ]} >{Button}</button>
   </div>
   
-  
+  {Contact}
 
 {SocialMedia.map((links , ke)=>{
   return <>

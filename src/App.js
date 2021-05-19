@@ -12,13 +12,13 @@ return(
     <>
  <React.Fragment>
            
-           <Switch>
+           {/* <Switch> */}
 
         
            {/* <Route exact path='/'component={Shaukat}  /> */}
            <Route exact path='/Portfolio'  />
            <Route exact  path='/Contact' component={Contact}  />
-           </Switch>
+           {/* </Switch> */}
            </React.Fragment>
 
 

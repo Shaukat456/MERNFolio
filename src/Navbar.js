@@ -25,7 +25,7 @@ const Navbar=()=>{
         <div className='nav'> 
             <NavLink    className='navL'     to='/PortFolio' activeClassName="selected" > PORTFOLIO </NavLink>
             <NavLink  className='navL'    to='/Contact' activeClassName="selected" > Contact ME </NavLink>
-            <NavLink   className='navL'   to='/About' activeClassName="selected" > About  </NavLink>
+            <NavLink   className='navL'   to='/' activeClassName="selected" > About  </NavLink>
             </div>
             </Fade>
         </React.Fragment>

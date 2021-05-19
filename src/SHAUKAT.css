@@ -154,26 +154,52 @@ body{
 .nav{
     color: white;
 }
-.contact{
+
+
+.Contact{
     display: flex;
-flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
 }
 
-.contact input{
-    align-items: center;
-    /* display: block; */
-    /* margin: auto; */
-    padding: 1.1em;
-    font-size: 1.2em;
+.Contact button{
+    position: relative;
+    top: 2em;
+
 }
-.contact button{
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 7em;
+.Contact input {
+    position: relative;
+    top: 1em;
+    font-size: 1.2rem;
+    font-family: monospace;
+    margin: 1em;
+    /* height: 2%; */
+    flex-basis: 30px;
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+ text-align: center;
+    /* order: 4; */
+}
+.Contact input:focus ,.Contact button:hover,.Contact button:focus{
+    transform: scale(1.1);
+    background-color: black;
+    color: yellow;
+    box-shadow: 0px 0px 6px yellow; 
+    outline: none;
+}
+input:last-child{
+    height: 50vh;
+}
+.Contact button{
+    border-radius: 50%;
+    background-color: black;
+    color: yellow;
+    outline: black  ;
+    font-family: monospace;
+    font-size: 2em;
 }
 
 .Socials{
