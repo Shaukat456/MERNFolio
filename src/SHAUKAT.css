@@ -240,8 +240,7 @@ visibility: hidden;
 }
 .introduction h2{
     flex-wrap: wrap-reverse;
-    width: 30vw
-    ;
+    width: 30vw;
     /* display: block; */
     color: rgb(123, 190, 14);
     font-size: 4rem;
@@ -267,8 +266,11 @@ animation-duration: 1s; */
     }
 } */
  .icon{
-    display: block;
-    width:auto;
+     position: relative;
+     top:100px ;
+    /* display: block; */
+    width:600px;
+    /* padding: 12px; */
     color: yellow;
     background-color: black;
     height: 20em;
@@ -283,13 +285,13 @@ animation-duration: 1s; */
     
     @keyframes hs2 {
         20%{
-            transform: translateY(5%);
+            transform: translateY(10%);
         }
         90%{
-            transform: translateY(-4%);
+            transform: translateY(-8%);
         }
         100%{
-            transform: translateY(-5%);
+            transform: translateY(-10%);
         }
     }
 

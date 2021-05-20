@@ -14,6 +14,7 @@ import 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import DisplayPicture from './pppp.png'
 import { SubdirectoryArrowLeftRounded } from '@material-ui/icons';
+import { scroller } from 'reacts';
 
 
 
@@ -58,12 +59,29 @@ const Shaukat=()=>{
          </figure>
         </Fade>    
          
-    {/* <h2> HEY <strong>  
-       Its Shaukat </strong>           */}
         <ArrowDropDownCircleIcon  className='icon'>
+    <h2> HEY <strong>  
 
-     {/* </h2> */}
+       Its Shaukat </strong>          
+     </h2>
+{
+     scroller.scrollTo("introductio", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    })
+
+}
+    
+      
+
+
+
         </ArrowDropDownCircleIcon>
+     
+     
+     
+     
         {/* <h1>HEY</h1> */}
  <Fade bottom duration={2000}>  <p> I am <strong> Shaukat Sohail</strong> , A <strong>FULL STACK WEB DEVELOPER</strong> , i am currently in intermediate (Science) but
     having deep interest in programming and development of various software operations I managed to become a web developer .  
