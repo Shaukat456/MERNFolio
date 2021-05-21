@@ -4,6 +4,8 @@ import {Fade}  from  'react-reveal'
 import { NavLink, Switch,Route, useLocation } from 'react-router-dom'
 import Shaukat from './Shaukat'
 import Contact from './Contact'
+// import 'react-scroll'
+import { scroller } from 'react-scroll';
 
 
 
@@ -23,9 +25,47 @@ const Navbar=()=>{
 {/* WHAT REALLY RENDERS! */}
       <Fade top> 
         <div className='nav'> 
-            <NavLink    className='navL'     to='/PortFolio' activeClassName="selected" > PORTFOLIO </NavLink>
-            <NavLink  className='navL'    to='/Contact' activeClassName="selected" > Contact ME </NavLink>
-            <NavLink   className='navL'   to='/' activeClassName="selected" > About  </NavLink>
+            <NavLink    className='navL'     to='/PortFolio' activeClassName="selected" >
+                
+                 PORTFOLIO 
+                 {
+     scroller.scrollTo("L", {
+      duration: 100,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    })
+
+}
+                 </NavLink>
+ 
+ 
+            <NavLink  className='navL'    to='/Contact' activeClassName="selected" > 
+            
+            Contact ME 
+            {
+     scroller.scrollTo(".Contact", {
+      duration: 300,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    })
+
+}           
+            
+            
+            </NavLink>
+            <NavLink   className='navL'   to='/' activeClassName="selected" > 
+            
+            About
+            {
+     scroller.scrollTo("introduction", {
+      duration: 100,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    })
+
+}
+            
+              </NavLink>
             </div>
             </Fade>
         </React.Fragment>

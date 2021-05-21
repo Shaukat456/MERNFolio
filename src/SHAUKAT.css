@@ -78,21 +78,24 @@ body{
     font-size: 1.2rem;
 /*  */}
 .selected{
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
     color: white;
     animation-name: b;
     animation-timing-function: ease;
     animation-iteration-count: 1;
     animation-duration: .5s;
+    transform: scale(1.4);
     /* anim?ation-direction: normal; */
 }
 @keyframes b {
     50%{
 
-        /* border-bottom: thin solid white; */
+        /* transform: scale(1); */
     }
     100%{
-        border-bottom: 1px white;
+        /* transform: scale(1.4); */
+
+        /* border-bottom: 1px white; */
 
     }
 }

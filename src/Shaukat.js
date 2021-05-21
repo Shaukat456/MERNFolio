@@ -14,7 +14,7 @@ import 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import DisplayPicture from './pppp.png'
 import { SubdirectoryArrowLeftRounded } from '@material-ui/icons';
-import { scroller } from 'reacts';
+import { scroller } from 'react-scroll';
 
 
 
@@ -59,19 +59,15 @@ const Shaukat=()=>{
          </figure>
         </Fade>    
          
-        <ArrowDropDownCircleIcon  className='icon'>
+           <ArrowDropDownCircleIcon  className='icon'>
+     {/* <button >  */}
     <h2> HEY <strong>  
 
        Its Shaukat </strong>          
      </h2>
-{
-     scroller.scrollTo("introductio", {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    })
 
-}
+{/*  */}
+
     
 
     
@@ -79,8 +75,8 @@ const Shaukat=()=>{
 
 
 
+     {/* </button> */}
         </ArrowDropDownCircleIcon>
-     
      
      
      

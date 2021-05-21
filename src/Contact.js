@@ -124,10 +124,11 @@ setContact(Clicked) ?  console.log('') : setButton('DOUBLE CLICK TO HIDE')
 
     <>
       
-      <div className='N'>
-        <h1 >LET GET IN TOUCH</h1>
+    <Fade top>  <div className='N'>
+        <h1 >LET GET IN TOUCH</h1> 
   <button   onClick={SeeContact} onDoubleClick={()=>[setButton('HIRE'), <> <Fade left duration={1000} >  { setContact('')} </Fade> </>   ]} >{Button}</button>
   </div>
+  </Fade>
   
   {Contact}
 
