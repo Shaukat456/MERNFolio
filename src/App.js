@@ -20,13 +20,7 @@ return(
            <Route exact path='/Portfolio'   />
            
 
-        {
-             scroller.scrollTo("introduction", {
-              duration: 100,
-              delay: 0,
-              smooth: "easeInOutQuart",
-            })
-        }   <Route exact  path='/Contact' component={Contact}  />
+           <Route exact  path='/Contact' component={Contact}  />
            </Switch>
            </React.Fragment>
 

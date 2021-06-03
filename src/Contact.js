@@ -99,7 +99,7 @@ const SeeContact=()=>{
     <>
     <Fade>
       <div className='Contact'>
-             <input type='text' placeholder='Name'  />
+             <input type='text' placeholder='Name' autoFocus   />
              <input type='text'  placeholder='Email' />
              <input type='text'  placeholder='Hire me / Lets talk' />
              <button> {click} </button>

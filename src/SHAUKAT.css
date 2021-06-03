@@ -210,7 +210,11 @@ input:last-child{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    /* width: 100vw; */
     /* flex-wrap: wrap; */
+}
+.Socials:hover{
+    transform: skewX(-10deg) translateX(5px);
 }
 .Socials h1{
 font-size: 2rem;

@@ -28,42 +28,22 @@ const Navbar=()=>{
             <NavLink    className='navL'     to='/PortFolio' activeClassName="selected" >
                 
                  PORTFOLIO 
-                 {
-     scroller.scrollTo("L", {
-      duration: 100,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    })
-
-}
+            
                  </NavLink>
  
  
             <NavLink  className='navL'    to='/Contact' activeClassName="selected" > 
             
             Contact ME 
-            {
-     scroller.scrollTo(".Contact", {
-      duration: 300,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    })
-
-}           
+            
             
             
             </NavLink>
             <NavLink   className='navL'   to='/' activeClassName="selected" > 
             
             About
-            {
-     scroller.scrollTo("introduction", {
-      duration: 100,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    })
+          
 
-}
             
               </NavLink>
             </div>
