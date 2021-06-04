@@ -1,27 +1,28 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Shaukat from './Shaukat'
 import styled from "styled-components";
 import Navbar from './Navbar'
 import Contact from './Contact'
+import Author from './Author'
 import {Route , Switch,useLocation} from 'react-router-dom'
 import  scroller  from 'react-scroll'
 import './index.css'
 const App= ()=>{
-    const location=useLocation();
-    // const redire=location.pathname=='.L'
+    
+    
 return(
     <>
  <React.Fragment>
            
-           <Switch>
+           {/* <Switch> */}
 
         
-           {/* <Route exact path='/'  /> */}
+           <Route exact path='/'  />
            <Route exact path='/Portfolio'   />
            
 
-           <Route exact  path='/Contact' component={Contact}  />
-           </Switch>
+           <Route exact  path='/Contact'    />
+           {/* </Switch> */}
            </React.Fragment>
 
 
@@ -30,7 +31,7 @@ return(
 <Navbar/>
 <Shaukat/>
 <Contact/>
-
+<Author/>
 
 <footer>
     Shaukat Sohail &copy; 
