@@ -14,6 +14,22 @@ body{
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+.Author{
+    display: flex;
+    /* flex-direction: column; */
+    /* text-align: center; */
+    flex-wrap: wrap;
+    padding: 2;
+}
+.Author p{
+    /* width: auto; */
+}
+.Author img{
+    height: 60vh;
+    width: auto;
+    /* flex-wrap: wrap; */
+}
+
 
 .N{ 
     background-color: black;
