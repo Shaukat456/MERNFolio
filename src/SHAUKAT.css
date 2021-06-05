@@ -2,6 +2,7 @@
 *{
     transition: all .5s ease    ;
     box-sizing: border-box;
+    
 }
 
 html{
@@ -11,22 +12,39 @@ body{
     background-color: black;
     margin: 0px;
     padding: 0px;
+    /* background-image: linear-gradient(to right, rgb(46, 40, 40) , rgb(87, 87, 72), rgb(28, 32, 28)); */
     color: white;
     font-family: 'Roboto', sans-serif;
+    /* opacity: .5; */
 }
 .Author{
+    background: url('./lee-campbell-DtDlVpy-vvQ-unsplash.jpg') no-repeat center/cover  ;
+    
     display: flex;
+    justify-content: center;
     /* flex-direction: column; */
-    /* text-align: center; */
+    text-align: center;
+    /* flex-wrap: wrap-reverse; */
+    padding: 2%;
     flex-wrap: wrap;
-    padding: 2;
 }
 .Author p{
+    font-size: 1rem;
+    height: inherit;
+    background-color: white;
+    color: black;
+    /* color: ; */
+    opacity: .5;
+    padding: 2%;
     /* width: auto; */
+    flex-wrap: wrap;
 }
 .Author img{
+    flex-wrap: wrap;
     height: 60vh;
     width: auto;
+    /* max-width: ; */
+    min-width: 5%;
     /* flex-wrap: wrap; */
 }
 
