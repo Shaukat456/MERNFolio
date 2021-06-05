@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 // import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap'
 
@@ -13,7 +13,7 @@ import Navbar from './Navbar'
 import 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import DisplayPicture from './pppp.png'
-import { SubdirectoryArrowLeftRounded } from '@material-ui/icons';
+import { Restaurant, SubdirectoryArrowLeftRounded } from '@material-ui/icons';
 import { scroller } from 'react-scroll';
 
 
@@ -42,6 +42,10 @@ const Skills=['Git', 'Web Desiging ', 'UX/UI','Postman']
 const Shaukat=()=>{
   const [resume, setResume]=useState( )
   const [button ,setButton]=useState('See resume')
+
+useEffect(()=>{
+    console.log('rendered')
+},[resume])
 
     const location=useLocation( );
     console.log(location)
@@ -105,7 +109,6 @@ const Shaukat=()=>{
         frontend.map((frames,index)=>{
             return (
                 <>
-                {/* <h2 key={index}>{frames.stack }</h2>      */}
           <Fade top>  <li>   { frames} </li></Fade>
                 </>
             )
