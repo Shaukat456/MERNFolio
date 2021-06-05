@@ -4,10 +4,9 @@ const Author=()=>{
     return(<>
     <div className='introduction'> 
         
-    <h1> From the Author  </h1>
+    <h2> From the Author Himself </h2>
     </div>
   <div className='Author' >
-    
       <figure>
           <img src={Img} />
       </figure>
