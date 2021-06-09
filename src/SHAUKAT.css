@@ -5,6 +5,19 @@
     
 }
 
+
+.rend{
+    animation: d 5s ease  infinite
+}
+@keyframes d {
+    from{
+        margin: 535px;
+    }
+    to{
+        margin: 0px;
+    }
+}
+
 html{
     scroll-behavior: smooth;
 }

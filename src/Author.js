@@ -1,7 +1,27 @@
 import Img from '../src/prp.jpg';
+import {useState } from 'react'
 
 const Author=()=>{
-    return(<>
+const [btn,setbtn]=useState('hahaha');
+
+function fuc (){
+    function shh(){
+
+        return (
+            <>
+        <div  className='rend'>
+        <h1>{btn}</h1> 
+        <h1>ahahahah</h1> 
+    </div>
+        </>
+    )
+}
+setbtn(shh)
+}
+
+return(<>
+
+
     <div className='introduction'> 
         
     <h2> From the Author Himself </h2>
@@ -21,6 +41,8 @@ Mauris sit amet quam id turpis egestas fermentum. Aenean feugiat est vel enim ma
 Maecenas vulputate urna id lectus consequat scelerisque. Donec elit velit, pretium a justo eget, feugiat blandit odio. Sed bibendum urna ut eros elementum, in ultrices neque euismod. Proin eu est a risus euismod mollis a ac risus. Quisque eu placerat ante, a scelerisque dui. Donec non purus nisi. Nullam imperdie
          </p>
          </div>
+
+        <button onClick={fuc}>  RENDER THIS SHIT </button> 
     
     </>)
 }
